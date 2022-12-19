@@ -8,7 +8,9 @@ import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 
 export function Post({ author, publishedAt, content }) {
-  const [comments, setComments] = useState(["Karolzita"]);
+  const [comments, setComments] = useState([
+    "Hoje fiz um projeto em javascript do curso Ignite",
+  ]);
 
   const [newCommentText, setNewCommentText] = useState("");
 
