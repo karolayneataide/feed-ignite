@@ -1,12 +1,12 @@
 import { Header } from "./components/Header";
+import { Post, PostProps } from "./components/Post";
 import { Sidebar } from "./components/Sidebar";
-import { Post } from "./components/Post";
 
 import styles from "./App.module.css";
 
 import "./global.css";
 
-const posts = [
+const posts: Array<PostProps & { id: number }> = [
   {
     id: 1,
     author: {
